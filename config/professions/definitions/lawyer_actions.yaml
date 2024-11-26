@@ -1,0 +1,34 @@
+actions:
+  draftContract:
+    description: Create legally binding contracts tailored to client needs.
+    inputRequirements:
+      - clientInformation
+      - contractTerms
+    output:
+      - draftedContract
+  reviewLegalDocument:
+    description: Analyze legal documents for compliance and risk.
+    inputRequirements:
+      - legalDocument
+    output:
+      - reviewReport
+  provideLegalAdvice:
+    description: Offer legal advice based on current laws and regulations.
+    inputRequirements:
+      - caseDetails
+    output:
+      - legalAdvice
+  representClientInCourt:
+    description: Advocate for clients in court proceedings.
+    inputRequirements:
+      - caseFiles
+      - evidence
+    output:
+      - courtRepresentationPlan
+  negotiateSettlement:
+    description: Negotiate settlements in civil disputes.
+    inputRequirements:
+      - disputeDetails
+      - clientGoals
+    output:
+      - settlementAgreement

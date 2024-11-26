@@ -1,0 +1,19 @@
+professionName: Surgeon
+allowedActions:
+  - analyzeSurgicalProcedureRequirements
+  - generatePreOperativePlanningDocuments
+  - createSurgicalApproachRecommendations
+  - processPostOperativeCarePlans
+  - monitorRecoveryMetrics
+  - trackSurgicalOutcomes
+  - generateOperativeReports
+  - coordinateSurgicalTeamRequirements
+  - analyzeSurgicalRiskFactors
+  - processSurgicalEquipmentNeeds
+complianceRequirements:
+  - medicalLicenseVerification
+  - surgicalCertificationVerification
+  - hipaaCompliance
+modelMappings:
+  surgicalPlanningModel: surgical_planning_v1
+  riskAssessmentModel: surgical_risk_assessment_v2

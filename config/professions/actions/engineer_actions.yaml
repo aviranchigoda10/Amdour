@@ -1,0 +1,32 @@
+actions:
+  designSystem:
+    description: Develop system designs based on requirements.
+    inputRequirements:
+      - systemRequirements
+    output:
+      - systemDesign
+  analyzeData:
+    description: Analyze engineering data to extract insights.
+    inputRequirements:
+      - dataSet
+    output:
+      - analysisResults
+  manageProject:
+    description: Oversee project timelines and deliverables.
+    inputRequirements:
+      - projectPlan
+    output:
+      - projectStatus
+  performSimulation:
+    description: Run simulations to test system performance.
+    inputRequirements:
+      - simulationParameters
+    output:
+      - simulationResults
+  generateReport:
+    description: Compile findings into a comprehensive report.
+    inputRequirements:
+      - analysisResults
+      - simulationResults
+    output:
+      - finalReport

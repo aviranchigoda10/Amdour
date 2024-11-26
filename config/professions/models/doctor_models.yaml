@@ -1,0 +1,27 @@
+models:
+  medical_diagnosis_v1:
+    modelType: MLModel
+    description: Model for diagnosing medical conditions based on symptoms.
+    provider: MedicalMLProvider
+    version: v1.0
+    inputParameters:
+      - symptoms
+      - medicalHistory
+    outputParameters:
+      - diagnosis
+    endpoints:
+      - url: https://api.medicalmlprovider.com/models/diagnosis/v1/predict
+        method: POST
+  treatment_recommender_v2:
+    modelType: MLModel
+    description: Model for recommending treatment plans.
+    provider: MedicalMLProvider
+    version: v2.0
+    inputParameters:
+      - diagnosis
+      - patientAllergies
+    outputParameters:
+      - treatmentPlan
+    endpoints:
+      - url: https://api.medicalmlprovider.com/models/treatment/v2/recommend
+        method: POST

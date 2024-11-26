@@ -1,0 +1,12 @@
+professionName: Engineer
+allowedActions:
+  - designSystem
+  - analyzeData
+  - manageProject
+  - performSimulation
+  - generateReport
+complianceRequirements:
+  - professionalEngineerLicenseVerification
+modelMappings:
+  simulationModel: engineering_simulator_v1
+  dataAnalysisModel: data_analyzer_v3

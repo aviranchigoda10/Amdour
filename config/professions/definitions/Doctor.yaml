@@ -1,0 +1,13 @@
+professionName: Doctor
+allowedActions:
+  - diagnosePatient
+  - prescribeMedication
+  - orderLabTests
+  - reviewTestResults
+  - provideFollowUpCare
+complianceRequirements:
+  - hipaaCompliance
+  - medicalLicenseVerification
+modelMappings:
+  diagnosisModel: medical_diagnosis_v1
+  treatmentRecommendationModel: treatment_recommender_v2

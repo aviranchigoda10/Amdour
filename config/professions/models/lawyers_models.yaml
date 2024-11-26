@@ -1,0 +1,25 @@
+models:
+  legal_doc_analyzer_v1:
+    modelType: MLModel
+    description: Analyzes legal documents for compliance and potential issues.
+    provider: LegalMLProvider
+    version: v1.0
+    inputParameters:
+      - legalDocument
+    outputParameters:
+      - analysisReport
+    endpoints:
+      - url: https://api.legalmlprovider.com/models/doc_analyzer/v1/analyze
+        method: POST
+  case_outcome_predictor_v2:
+    modelType: MLModel
+    description: Predicts potential outcomes of legal cases.
+    provider: LegalMLProvider
+    version: v2.0
+    inputParameters:
+      - caseDetails
+    outputParameters:
+      - outcomePrediction
+    endpoints:
+      - url: https://api.legalmlprovider.com/models/case_predictor/v2/predict
+        method: POST

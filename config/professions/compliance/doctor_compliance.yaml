@@ -1,0 +1,17 @@
+complianceRequirements:
+  hipaaCompliance:
+    description: Ensure all patient data is handled according to HIPAA regulations.
+    regulations:
+      - HIPAA Privacy Rule
+      - HIPAA Security Rule
+    enforcementActions:
+      - dataEncryption: true
+      - accessLogging: true
+      - userAuthentication: strong
+  medicalLicenseVerification:
+    description: Verify that the user holds a valid medical license.
+    verificationMethod: externalAPI
+    apiEndpoint: https://api.medicalboard.gov/verify
+    requiredFields:
+      - licenseNumber
+      - issuingState

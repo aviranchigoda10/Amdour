@@ -1,0 +1,33 @@
+actions:
+  diagnosePatient:
+    description: Analyze patient symptoms and medical history to provide a diagnosis.
+    inputRequirements:
+      - patientSymptoms
+      - medicalHistory
+    output:
+      - diagnosis
+  prescribeMedication:
+    description: Prescribe appropriate medications based on diagnosis.
+    inputRequirements:
+      - diagnosis
+      - patientAllergies
+    output:
+      - medicationPrescription
+  orderLabTests:
+    description: Order necessary lab tests for further analysis.
+    inputRequirements:
+      - suspectedConditions
+    output:
+      - labTestOrders
+  reviewTestResults:
+    description: Review and interpret lab test results.
+    inputRequirements:
+      - labResults
+    output:
+      - updatedDiagnosis
+  provideFollowUpCare:
+    description: Offer follow-up care instructions and schedule future appointments.
+    inputRequirements:
+      - treatmentPlan
+    output:
+      - followUpInstructions

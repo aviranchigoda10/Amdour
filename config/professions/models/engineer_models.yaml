@@ -1,0 +1,25 @@
+models:
+  engineering_simulator_v1:
+    modelType: MLModel
+    description: Simulates engineering systems under various conditions.
+    provider: EngineeringMLProvider
+    version: v1.0
+    inputParameters:
+      - simulationParameters
+    outputParameters:
+      - simulationResults
+    endpoints:
+      - url: https://api.engmlprovider.com/models/simulator/v1/run
+        method: POST
+  data_analyzer_v3:
+    modelType: MLModel
+    description: Advanced data analysis for engineering datasets.
+    provider: DataMLProvider
+    version: v3.0
+    inputParameters:
+      - dataSet
+    outputParameters:
+      - analysisResults
+    endpoints:
+      - url: https://api.datamlprovider.com/models/analyzer/v3/analyze
+        method: POST

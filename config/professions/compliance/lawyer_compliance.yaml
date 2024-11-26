@@ -1,0 +1,15 @@
+complianceRequirements:
+  clientConfidentiality:
+    description: Maintain confidentiality of all client communications.
+    regulations:
+      - ABA Model Rules of Professional Conduct
+    enforcementActions:
+      - dataEncryption: true
+      - secureCommunicationChannels: true
+  barMembershipVerification:
+    description: Confirm active membership in the state bar association.
+    verificationMethod: externalAPI
+    apiEndpoint: https://api.statebarassociation.org/verify
+    requiredFields:
+      - barNumber
+      - state

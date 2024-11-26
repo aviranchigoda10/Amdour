@@ -1,0 +1,13 @@
+professionName: Lawyer
+allowedActions:
+  - draftContract
+  - reviewLegalDocument
+  - provideLegalAdvice
+  - representClientInCourt
+  - negotiateSettlement
+complianceRequirements:
+  - clientConfidentiality
+  - barMembershipVerification
+modelMappings:
+  legalDocumentAnalysisModel: legal_doc_analyzer_v1
+  casePredictionModel: case_outcome_predictor_v2

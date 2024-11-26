@@ -1,0 +1,18 @@
+professionName: Financial Analyst
+allowedActions:
+  - processFinancialStatements
+  - generateFinancialForecasts
+  - monitorEconomicIndicators
+  - createInvestmentRecommendations
+  - trackPortfolioPerformance
+  - generateRiskAssessments
+  - processMarketResearch
+  - createFinancialReports
+  - monitorIndustryTrends
+  - generateValuationModels
+complianceRequirements:
+  - finraCompliance
+  - antiMoneyLaunderingChecks
+modelMappings:
+  financialForecastingModel: financial_forecasting_v3
+  riskAssessmentModel: financial_risk_assessment_v2

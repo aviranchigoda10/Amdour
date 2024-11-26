@@ -1,0 +1,63 @@
+actions:
+  analyzeSurgicalProcedureRequirements:
+    description: Review patient cases to determine surgical needs.
+    inputRequirements:
+      - patientMedicalHistory
+      - diagnosticImaging
+    output:
+      - procedureRequirements
+  generatePreOperativePlanningDocuments:
+    description: Create detailed plans for upcoming surgeries.
+    inputRequirements:
+      - procedureRequirements
+    output:
+      - preOperativePlan
+  createSurgicalApproachRecommendations:
+    description: Recommend the best surgical approach for a case.
+    inputRequirements:
+      - preOperativePlan
+    output:
+      - surgicalApproach
+  processPostOperativeCarePlans:
+    description: Develop care plans following surgery.
+    inputRequirements:
+      - surgicalOutcome
+    output:
+      - postOperativeCarePlan
+  monitorRecoveryMetrics:
+    description: Track patient recovery data post-surgery.
+    inputRequirements:
+      - patientRecoveryData
+    output:
+      - recoveryMetricsReport
+  trackSurgicalOutcomes:
+    description: Analyze outcomes to improve future procedures.
+    inputRequirements:
+      - recoveryMetricsReport
+    output:
+      - surgicalOutcomeAnalysis
+  generateOperativeReports:
+    description: Document details of surgical procedures.
+    inputRequirements:
+      - intraoperativeData
+    output:
+      - operativeReport
+  coordinateSurgicalTeamRequirements:
+    description: Organize team roles and responsibilities.
+    inputRequirements:
+      - surgicalApproach
+    output:
+      - teamAssignmentPlan
+  analyzeSurgicalRiskFactors:
+    description: Assess potential risks associated with surgery.
+    inputRequirements:
+      - patientMedicalHistory
+      - procedureRequirements
+    output:
+      - riskAssessment
+  processSurgicalEquipmentNeeds:
+    description: Determine equipment required for surgery.
+    inputRequirements:
+      - surgicalApproach
+    output:
+      - equipmentList

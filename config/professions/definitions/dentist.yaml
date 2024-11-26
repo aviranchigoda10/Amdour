@@ -1,0 +1,18 @@
+professionName: Dentist
+allowedActions:
+  - generateDentalTreatmentPlans
+  - processDentalImagingAnalysis
+  - trackOralHealthPatterns
+  - createPreventiveCareRecommendations
+  - monitorTreatmentProgress
+  - generateProcedureCostEstimates
+  - scheduleDentalProcedures
+  - processInsuranceClaims
+  - trackPatientDentalHistory
+  - generateOralHygieneInstructions
+complianceRequirements:
+  - dentalLicenseVerification
+  - hipaaCompliance
+modelMappings:
+  dentalImagingModel: dental_imaging_analyzer_v1
+  treatmentRecommendationModel: dental_treatment_recommender_v2

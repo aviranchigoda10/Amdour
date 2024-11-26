@@ -1,0 +1,139 @@
+.
+├── apps
+│   ├── api
+│   │   ├── controllers
+│   │   ├── dynamic
+│   │   │   ├── actions
+│   │   │   │   ├── analyze.ts
+│   │   │   │   ├── create.ts
+│   │   │   │   ├── generate.ts
+│   │   │   │   ├── monitor.ts
+│   │   │   │   └── process.ts
+│   │   │   ├── handlers
+│   │   │   └── router
+│   │   │       ├── generator.ts
+│   │   │       ├── mapper.ts
+│   │   │       └── templates.ts
+│   │   └── middleware
+│   │       ├── auth
+│   │       ├── compliance
+│   │       └── validation
+│   └── web
+│       ├── components
+│       │   ├── common
+│       │   ├── dashboard
+│       │   └── dynamic
+│       │       ├── dashboard
+│       │       ├── generator
+│       │       └── professional
+│       ├── pages
+│       │   ├── admin
+│       │   ├── auth
+│       │   └── professional
+│       │       ├── generator
+│       │       ├── routes
+│       │       └── templates
+│       └── styles
+├── config
+│   ├── index.js
+│   ├── professions
+│   │   ├── actions
+│   │   │   ├── dentist_actions.yaml
+│   │   │   ├── doctorActions.js
+│   │   │   ├── engineer_actions.yaml
+│   │   │   ├── financial_analyst_actions.yaml
+│   │   │   └── surgeon_actions.yaml
+│   │   ├── compliance
+│   │   │   ├── doctorCompliance.js
+│   │   │   ├── doctor_compliance.yaml
+│   │   │   ├── engineer_compliance.yaml
+│   │   │   ├── lawyer_compliance.yaml
+│   │   │   └── surgeon_compliance.yaml
+│   │   ├── definitions
+│   │   │   ├── Doctor.yaml
+│   │   │   ├── dentist.yaml
+│   │   │   ├── doctor_actions.yaml
+│   │   │   ├── engineer.yaml
+│   │   │   ├── financial_analyst.yaml
+│   │   │   ├── lawyer.yaml
+│   │   │   ├── lawyer_actions.yaml
+│   │   │   └── surgeon.yaml
+│   │   └── models
+│   │       ├── dentist_models.yaml
+│   │       ├── doctorModels.js
+│   │       ├── doctor_models.yaml
+│   │       ├── engineer_models.yaml
+│   │       ├── financial_analyst_models.yaml
+│   │       ├── lawyers_models.yaml
+│   │       └── surgeon_models.yaml
+│   ├── system
+│   │   ├── database.js
+│   │   ├── doctor.js
+│   │   ├── logger.js
+│   │   └── server.js
+│   └── templates
+│       ├── action
+│       ├── compliance
+│       └── profession
+│           └── professionTemplate.js
+├── core
+│   ├── agents
+│   │   ├── base
+│   │   │   ├── cognitive
+│   │   │   ├── communication
+│   │   │   └── learning
+│   │   ├── engine
+│   │   │   ├── generator
+│   │   │   │   └── README.md
+│   │   │   ├── templates
+│   │   │   │   └── template1.js
+│   │   │   └── validator
+│   │   │       └── validation.js
+│   │   └── utils
+│   ├── llm
+│   │   ├── config
+│   │   ├── prompts
+│   │   │   ├── generator
+│   │   │   │   └── generate_prompt.js
+│   │   │   ├── optimizer
+│   │   │   │   └── optimize_prompt.js
+│   │   │   └── templates
+│   │   │       └── prompt1.txt
+│   │   └── providers
+│   └── memory
+├── data
+│   ├── analytics
+│   ├── cache
+│   ├── models
+│   │   ├── integration
+│   │   ├── professional
+│   │   │   ├── generator
+│   │   │   ├── templates
+│   │   │   └── validator
+│   │   └── system
+│   └── storage
+├── meta
+│   ├── generators
+│   │   ├── components
+│   │   ├── routes
+│   │   └── services
+│   ├── schemas
+│   └── templates
+├── ml
+│   ├── inference
+│   ├── models
+│   │   ├── mapper
+│   │   ├── orchestrator
+│   │   └── registry
+│   └── training
+├── project_structure.txt
+└── services
+    ├── compliance
+    ├── infrastructure
+    ├── integration
+    └── professional
+        ├── engine
+        ├── handlers
+        └── templates
+
+91 directories, 46 files

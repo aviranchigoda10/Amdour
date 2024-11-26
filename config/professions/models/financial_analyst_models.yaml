@@ -1,0 +1,27 @@
+models:
+  financial_forecasting_v3:
+    modelType: MLModel
+    description: Generates financial forecasts based on data.
+    provider: FinanceMLProvider
+    version: v3.0
+    inputParameters:
+      - historicalData
+      - marketTrends
+    outputParameters:
+      - financialForecast
+    endpoints:
+      - url: https://api.financemlprovider.com/models/forecasting/v3/forecast
+        method: POST
+  financial_risk_assessment_v2:
+    modelType: MLModel
+    description: Assesses financial risks in investments.
+    provider: FinanceMLProvider
+    version: v2.0
+    inputParameters:
+      - investmentOptions
+      - marketVolatilityData
+    outputParameters:
+      - riskAssessment
+    endpoints:
+      - url: https://api.financemlprovider.com/models/risk_assessment/v2/assess
+        method: POST

@@ -1,0 +1,65 @@
+actions:
+  processFinancialStatements:
+    description: Analyze financial statements for insights.
+    inputRequirements:
+      - financialStatements
+    output:
+      - financialAnalysisReport
+  generateFinancialForecasts:
+    description: Predict future financial performance.
+    inputRequirements:
+      - historicalData
+      - marketTrends
+    output:
+      - financialForecast
+  monitorEconomicIndicators:
+    description: Keep track of key economic metrics.
+    inputRequirements:
+      - economicDataFeeds
+    output:
+      - economicIndicatorReport
+  createInvestmentRecommendations:
+    description: Suggest investment opportunities.
+    inputRequirements:
+      - clientPortfolio
+      - marketAnalysis
+    output:
+      - investmentRecommendations
+  trackPortfolioPerformance:
+    description: Monitor how portfolios are performing.
+    inputRequirements:
+      - portfolioData
+    output:
+      - performanceReport
+  generateRiskAssessments:
+    description: Evaluate potential risks in investments.
+    inputRequirements:
+      - investmentOptions
+      - marketVolatilityData
+    output:
+      - riskAssessmentReport
+  processMarketResearch:
+    description: Gather and analyze market data.
+    inputRequirements:
+      - marketResearchData
+    output:
+      - marketResearchReport
+  createFinancialReports:
+    description: Compile financial data into reports.
+    inputRequirements:
+      - financialAnalysis
+    output:
+      - financialReport
+  monitorIndustryTrends:
+    description: Stay updated on industry developments.
+    inputRequirements:
+      - industryNews
+    output:
+      - industryTrendAnalysis
+  generateValuationModels:
+    description: Develop models to estimate asset values.
+    inputRequirements:
+      - companyFinancials
+      - marketComparables
+    output:
+      - valuationModel

@@ -1,0 +1,27 @@
+models:
+  surgical_planning_v1:
+    modelType: MLModel
+    description: Assists in creating detailed surgical plans.
+    provider: MedicalMLProvider
+    version: v1.0
+    inputParameters:
+      - diagnosticImaging
+      - patientMedicalHistory
+    outputParameters:
+      - surgicalPlan
+    endpoints:
+      - url: https://api.medicalmlprovider.com/models/surgical_planning/v1/plan
+        method: POST
+  surgical_risk_assessment_v2:
+    modelType: MLModel
+    description: Evaluates risk factors for surgical procedures.
+    provider: MedicalMLProvider
+    version: v2.0
+    inputParameters:
+      - patientMedicalHistory
+      - procedureRequirements
+    outputParameters:
+      - riskAssessment
+    endpoints:
+      - url: https://api.medicalmlprovider.com/models/risk_assessment/v2/assess
+        method: POST

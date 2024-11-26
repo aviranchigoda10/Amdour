@@ -1,0 +1,8 @@
+complianceRequirements:
+  professionalEngineerLicenseVerification:
+    description: Verify active Professional Engineer (PE) license.
+    verificationMethod: externalAPI
+    apiEndpoint: https://api.engineeringboard.gov/verify
+    requiredFields:
+      - licenseNumber
+      - state

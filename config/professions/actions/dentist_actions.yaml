@@ -1,0 +1,64 @@
+actions:
+  generateDentalTreatmentPlans:
+    description: Create personalized treatment plans for patients.
+    inputRequirements:
+      - dentalExamResults
+    output:
+      - treatmentPlan
+  processDentalImagingAnalysis:
+    description: Analyze dental images for diagnosis.
+    inputRequirements:
+      - dentalImages
+    output:
+      - imagingAnalysisReport
+  trackOralHealthPatterns:
+    description: Monitor changes in oral health over time.
+    inputRequirements:
+      - patientDentalHistory
+    output:
+      - oralHealthTrends
+  createPreventiveCareRecommendations:
+    description: Suggest preventive measures to patients.
+    inputRequirements:
+      - oralHealthTrends
+    output:
+      - preventiveCarePlan
+  monitorTreatmentProgress:
+    description: Evaluate the effectiveness of treatments.
+    inputRequirements:
+      - followUpExams
+    output:
+      - treatmentProgressReport
+  generateProcedureCostEstimates:
+    description: Estimate costs for proposed dental procedures.
+    inputRequirements:
+      - treatmentPlan
+      - insuranceInformation
+    output:
+      - costEstimate
+  scheduleDentalProcedures:
+    description: Arrange appointments for treatments.
+    inputRequirements:
+      - patientAvailability
+      - procedureRequirements
+    output:
+      - appointmentSchedule
+  processInsuranceClaims:
+    description: Handle insurance paperwork for treatments.
+    inputRequirements:
+      - treatmentDetails
+      - insuranceInformation
+    output:
+      - insuranceClaimSubmission
+  trackPatientDentalHistory:
+    description: Maintain records of patient treatments and visits.
+    inputRequirements:
+      - treatmentUpdates
+    output:
+      - updatedDentalHistory
+  generateOralHygieneInstructions:
+    description: Provide patients with care instructions.
+    inputRequirements:
+      - treatmentPlan
+    output:
+      - oralHygieneInstructions
